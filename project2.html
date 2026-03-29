@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head><title>버그 리포트</title></head>
+    <body>
+        <form action="#">
+        <header><h1>버그 리포트</h1></header><hr><br>
+
+        <label> 작성자: <input type="text"></label>
+        <label> 발생 시간: <input type="datetime-local" value="2007-03-23T16:00:00"></label><br><br>
+
+        <h3>발생 환경</h3>
+        <label> 운영체제: <input type="text" list="OS"></label>
+        <datalist id="OS">
+            <option value="Windows">
+            <option value="macOS">
+            <option value="Android">
+            <option value="iOS">
+        </datalist>
+        <label> 브라우저: <input type="text" list="browser"></label>
+        <datalist id="browser">
+            <option value="Chrome">
+            <option value="Safari">
+            <option value="Edge">
+            <option value="Firefox">
+        </datalist>
+        <label> 기기: <select name="Device">
+            <option value="1" selected> PC</option>
+            <option value="1"> 스마트폰</option>
+            <option value="1"> 태블릿</option>
+        </select></label><br><br><hr>
+        
+        <label><h2>상세 내용</h2>
+        <textarea cols="80" rows="20"></textarea></label><br>
+
+        <h3>위험도</h3>
+        <label><input type="radio" name="Danger" value="1"> 매우 낮음</label>
+        <label><input type="radio" name="Danger" value="2"> 낮음</label>
+        <label><input type="radio" name="Danger" value="3"> 보통</label>
+        <label><input type="radio" name="Danger" value="4"> 높음</label>
+        <label><input type="radio" name="Danger" value="5"> 매우 높음</label><br><br>
+
+        <input type="submit"value="제출">
+        </form>
+    </body>
+
+
+
+</html>
